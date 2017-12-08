@@ -16,7 +16,7 @@ Os dados foram coletados via webscraping e o script se econtra [aqui](./scrap.py
 
 ### 2.1 Quantidade de palavras
 
-![Vocabulário](./vocabulario_interbandas.png)
+![Vocabulário](./images/vocabulario_interbandas.png)
 
 Notoriamente Dance of days é a banda que tem mais palavras em seu vocabulário.
 [Script usado](./images/quantidade_de_palavras.py)
