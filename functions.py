@@ -13,7 +13,7 @@ def dict_to_json(path, _dict):
 
 
 def gen_graph(sequence, height, x_names, path, text):
-    plt.figure(figsize=(9, 9))
+    plt.figure(figsize=(9, 4))
     plt.bar(sequence, height, align='center', alpha=0.5)
     plt.ylabel('Palavras')
     plt.title(text)
