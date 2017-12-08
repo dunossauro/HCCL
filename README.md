@@ -2,9 +2,11 @@
 
 ## 0. Qual o objetivo desse repositório?
 
-Como objetivo não há nada de conclusivo, apenas curiosidade de saber sobre as bandas que eu mais escuto e suas diferenças sob uma ótica "linguistica". Não há conteúdo ciêntifico nenhum nesse repositório e tbm não há uma veracidade nos dado utilizados, não pode nem mesmo ser considerado um corpora, pois no [site que usei como base](https://www.letras.mus.br/) para extração de texto, muitas musicas se apresentam de maneiras repetidas.
+Como objetivo não há nada de conclusivo, apenas curiosidade de saber sobre as algumas das bandas que eu mais escuto (e que tenham alguma coisa em comum*) e suas diferenças sob uma ótica "linguistica". Não há conteúdo ciêntifico nenhum nesse repositório e tbm não há uma veracidade nos dado utilizados, não pode nem mesmo ser considerado um corpora, pois no [site que usei como base](https://www.letras.mus.br/) para extração de texto, muitas musicas se apresentam de maneiras repetidas.
 
 Outro ponto que cabe ser notado é que toda a análise foi feita (até agora) usando somente uma palavra (oone-gram). Pode-se se observar que não grande aprofundamento sendo comparada dessa maneira, pois não há uma disperção, porém nos ultimos tópicos falaremos sobre isso.
+
+\* as bandas tem uma quantidade de discos parecidas e no inicio ambas cantavam em inglês
 
 ## 1. Como os dados foram coletados?
 
