@@ -37,4 +37,7 @@ Embora eu tenha tomado um pouco de cuidado, procurado por listas de [stopwords](
 
 ### 2.3 Palavras mais comuns entre as 3 bandas
 
+Primeiramente gostaria de analizar as palavras comuns no top 10 fazendo um merge entre eles:
+![Vocabulário](./images/top_10_merge.png)
+
 ### 2.4 Palavras únicas de cada banda

@@ -19,9 +19,9 @@ multilang_stopwrods = list(chain(ntlk_stopwords.words('portuguese'),
 
 musics = json_to_dict('bands', 'dead-fish.json')
 
-lirycs = ' '.join(list(musics.values())).lower()
+lyrics = ' '.join(list(musics.values())).lower()
 
-count = Counter(remove_stop_words(tokenize.casual_tokenize(lirycs),
+count = Counter(remove_stop_words(tokenize.casual_tokenize(lyrics),
                                   multilang_stopwrods))
 
 dict_to_json('wordcount/dead-fish', count)

@@ -11,6 +11,8 @@ multilang_stopwrods = list(chain(ntlk_stopwords.words('portuguese'),
                                  default_punctation,
                                  stopwords))
 
+bands = [band for band in listdir('bands')]
+
 
 def remove_stop_words(word_list: list, stopwords: list) -> list:
     """Filter stopwords on list."""
@@ -19,7 +21,6 @@ def remove_stop_words(word_list: list, stopwords: list) -> list:
 
 def gen_top10(band):
     musics = json_to_dict('bands', '{}.json'.format(band))
-
     lirycs = ' '.join(list(musics.values())).lower()
 
     count = Counter(remove_stop_words(tokenize.casual_tokenize(lirycs),
@@ -28,8 +29,11 @@ def gen_top10(band):
     return OrderedDict({word: count for word, count in count.most_common(10)})
 
 
-for band in listdir('bands'):
-    top_10 = gen_top10(band[:-5])
-    gen_graph(list(top_10.keys()), list(top_10.values()), list(top_10.keys()),
-              'images/{}_top10.png'.format(band[:-5]),
+tops = [gen_top10(band[:-5]) for band in bands]
+
+for rank, band_name in zip(tops, bands):
+    gen_graph(rank.keys(), rank.values(), rank.keys(),
+              'images/{}_top10.png'.format(band_name[:-5]),
               '10 palavras mais usadas')
+
+# Use this zip(tops, bands) to concat dicts
